@@ -3,21 +3,21 @@ require "yaml"
 
 def load_library(filePath)
   # code goes here
-  returnHash = {"get_meaning" => {}, "get_emoticon" => {}}
+  returnHash = {}
   rawData = YAML.load_file(filePath)
-  puts "Raw Data: #{rawData}"
+  #puts "Raw Data: #{rawData}"
   
   rawData.each do |key, value|
-    puts "  key: #{key}"
-    puts "  value: #{value}"
-    puts "   engEmo: #{value[0]}"
-    puts "   japEmo: #{value[1]}"
+    #puts "  key: #{key}"
+    #puts "  value: #{value}"
+    #puts "   engEmo: #{value[0]}"
+    #puts "   japEmo: #{value[1]}"
     returnHash["get_meaning"][value[1]] = key
-    puts "test "
     returnHash["get_emoticon"][value[0]] = value[1]
   end
   
-  puts "returnHash: #{returnHash}"
+  #puts "returnHash: #{returnHash}"
+  returnHash
 end
 
 def get_japanese_emoticon
