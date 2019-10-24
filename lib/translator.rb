@@ -12,9 +12,9 @@ def load_library(filePath)
     puts "  value: #{value}"
     puts "   engEmo: #{value[0]}"
     puts "   japEmo: #{value[1]}"
-    returnHash["get_meaning"][japEmo] = key
+    returnHash["get_meaning"][value[1]] = key
     puts "test "
-    returnHash["get_emoticon"][engEmo] = japEmo
+    returnHash["get_emoticon"][value[0]] = japEmo
   end
   
   puts "returnHash: #{returnHash}"
