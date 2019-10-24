@@ -20,13 +20,13 @@ def load_library(filePath)
   returnHash
 end
 
-def get_japanese_emoticon(filePath. emo)
+def get_japanese_emoticon(filePath, emo)
   # code goes here
   library = load_library(filePath)
   
 end
 
-def get_english_meaning(filePath. emo)
+def get_english_meaning(filePath, emo)
   # code goes here
   library = load_library(filePath)
   
