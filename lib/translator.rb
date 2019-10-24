@@ -5,13 +5,13 @@ def load_library(filePath)
   # code goes here
   returnHash = {}
   rawData = YAML.load_file(filePath)
-  #puts "Raw Data: #{rawData}"
+  puts "Raw Data: #{rawData}"
   
   rawData.each do |key, value|
-    #puts "  key: #{key}"
-    #puts "  value: #{value}"
-    #puts "   engEmo: #{value[0]}"
-    #puts "   japEmo: #{value[1]}"
+    puts "  key: #{key}"
+    puts "  value: #{value}"
+    puts "   engEmo: #{value[0]}"
+    puts "   japEmo: #{value[1]}"
     returnHash["get_meaning"][japEmo] = key
     returnHash["get_emoticon"][engEmo] = japEmo
   end
