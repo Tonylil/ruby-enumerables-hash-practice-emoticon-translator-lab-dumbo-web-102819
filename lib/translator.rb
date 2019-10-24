@@ -26,6 +26,6 @@ def get_japanese_emoticon(filePath. emo)
   
 end
 
-def get_english_meaning
+def get_english_meaning(filePath. emo)
   # code goes here
 end
