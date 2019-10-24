@@ -3,8 +3,13 @@ require "yaml"
 
 def load_library(filePath)
   # code goes here
-  library = YAML.load_file(filePath)
-  #puts library
+  rawData = YAML.load_file(filePath)
+  puts "Raw Data: #{rawData}"
+  
+  rawData.each do |key, value|
+    puts "  key: #{key}"
+    puts "  value: #{value}"
+  end
 end
 
 def get_japanese_emoticon
