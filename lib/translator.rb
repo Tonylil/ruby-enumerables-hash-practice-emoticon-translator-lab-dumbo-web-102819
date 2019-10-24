@@ -13,6 +13,7 @@ def load_library(filePath)
     puts "   engEmo: #{value[0]}"
     puts "   japEmo: #{value[1]}"
     returnHash["get_meaning"][japEmo] = key
+    returnHash["get_emoticon"][engEmo] = japEmo
   end
 end
 
