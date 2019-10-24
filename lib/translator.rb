@@ -22,6 +22,7 @@ end
 
 def get_japanese_emoticon(filePath. emo)
   # code goes here
+  library = load_library(filePath)
 end
 
 def get_english_meaning
