@@ -10,8 +10,8 @@ def load_library(filePath)
     puts "  key: #{key}"
     puts "  value: #{value}"
     value.each do |engEmo, japEmo|
-      puts "   engEmo #{engEmo}"
-      puts "   japEmo #{japEmo}"
+      puts "   engEmo: #{engEmo}"
+      puts "   japEmo: #{japEmo}"
     end
   end
 end
