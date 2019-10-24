@@ -23,7 +23,10 @@ end
 def get_japanese_emoticon(filePath, emo)
   # code goes here
   library = load_library(filePath)
-  
+  if library["get_emoticon"].key?(emo)
+    return library["get_emoticon"][emo]
+  else
+    "Sorry No Emo at all"
 end
 
 def get_english_meaning(filePath, emo)
