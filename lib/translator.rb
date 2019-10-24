@@ -15,6 +15,8 @@ def load_library(filePath)
     returnHash["get_meaning"][japEmo] = key
     returnHash["get_emoticon"][engEmo] = japEmo
   end
+  
+  puts "returnHash: #{returnHash}"
 end
 
 def get_japanese_emoticon
