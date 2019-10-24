@@ -3,7 +3,7 @@ require "yaml"
 
 def load_library(filePath)
   # code goes here
-  returnHash = {}
+  returnHash = {"get_meaning" => {}, "get_emoticon" => {}}
   rawData = YAML.load_file(filePath)
   #puts "Raw Data: #{rawData}"
   
