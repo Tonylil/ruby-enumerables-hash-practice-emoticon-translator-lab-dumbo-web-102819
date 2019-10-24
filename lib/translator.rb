@@ -9,10 +9,8 @@ def load_library(filePath)
   rawData.each do |key, value|
     puts "  key: #{key}"
     puts "  value: #{value}"
-    
-      puts "   engEmo: #{engEmo}"
-      puts "   japEmo: #{japEmo}"
-    end
+    puts "   engEmo: #{value[0]}"
+    puts "   japEmo: #{value[1]}"
   end
 end
 
